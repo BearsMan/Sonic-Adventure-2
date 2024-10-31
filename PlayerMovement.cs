@@ -17,14 +17,14 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Vector3 moveDir = new Vector3(verticalVelocityMovement, horizontalVelocityMovement).normalized;
-        float horizontalVelocity = controller.velocity.x;
-        float verticalVelocity = controller.velocity.y;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        float horizontalVelocity = controller.velocity.x;
+        float verticalVelocity = controller.velocity.y;
+        Vector3 moveDir = new Vector3(verticalVelocityMovement, 0, horizontalVelocityMovement).normalized;
     }
 }
